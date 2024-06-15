@@ -45,6 +45,10 @@ nav ul li {
   color: white;
   text-decoration: none;
 }
+.links:hover{
+  color: #004db3;
+background-color: white;
+}
 .image-one {
   height: auto;
   max-width: 10vw;
