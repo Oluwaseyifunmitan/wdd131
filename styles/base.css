@@ -119,7 +119,7 @@ main {
 }
 
 hr {
-  border: 0.5px faded grey;
+  border: 0.5px ridge grey;
   width: 70%;
   margin: auto;
 }
