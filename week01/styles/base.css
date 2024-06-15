@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap");
+@import url("https://api.fontshare.com/v2/css?f[]=satoshi@400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr repeat(8, minmax(min-content, 18rem)) 1fr;
+  font-size: 20px;
+  font-family: "Satoshi", sans-serif;
+  /* font-weight: bold; */
+  height: 100vh;
+}
+header {
+  grid-column: 1/11;
+  height: 15vh;
+  background-color: #004db3;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-family: "Nanum Gothic", sans-serif;
+}
+nav {
+  grid-column: 1/11;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+nav ul li {
+  text-align: center;
+}
+.links {
+  color: white;
+  text-decoration: none;
+}
+.image-one {
+  height: auto;
+  max-width: 10vw;
+  border-radius: 3%;
+  padding: 10px;
+  margin: 25px;
+}
+.image-two {
+  height: auto;
+  max-width: 10vw;
+  border-radius: 3%;
+  padding: 10px;
+  margin: 25px;
+}
+main {
+  display: grid;
+  grid-column: 1/8;
+}
+
+.card {
+  border: 1px solid black;
+  grid-column: 1/8;
+  margin: 20px;
+  border-radius: 2%;
+}
+.card-two {
+  border: 1px solid black;
+  grid-column: 8/11;
+  margin: 20px;
+  border-radius: 2%;
+}
+.card-content {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 20px;
+}
+.card-content-two {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  padding: 20px;
+}
+.card-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  font-size: 20px;
+}
+.card-para-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  font-size: 20px;
+}
+.heading {
+  text-align: center;
+  background-color: #004db3;
+  border-radius: 5%;
+  color: white;
+  font-family: "Nanum Gothic", sans-serif;
+  font-size: 20px;
+}
+
+.state {
+  text-align: center;
+}
+
+hr {
+  border: 0.5px faded grey;
+  width: 70%;
+  margin: auto;
+}
+.links-resources {
+  /* display: flex; */
+  flex-direction: column;
+  padding: 20px;
+  margin-top: 5rem;
+}
+.links-resources a {
+  color: black;
+}
+.links-resources li {
+  display: flex;
+}
+
+footer {
+  grid-column: 1/11;
+  color: white;
+  height: 15vh;
+  background-color: #004db3;
+  text-align: center;
+  padding: 20px;
+}
+#lastModified{
+	font-size: 15px;
+}
