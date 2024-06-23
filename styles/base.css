@@ -16,6 +16,8 @@ body {
   height: 100vh;
 }
 header {
+  display: flex;
+  flex-direction: column;
   grid-column: 1/11;
   height: 15vh;
   background-color: #004db3;
@@ -28,9 +30,10 @@ nav {
   grid-column: 1/11;
   background-color: black;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   padding: 20px;
+  margin: 50px;
 }
 nav ul {
   display: flex;
@@ -41,13 +44,13 @@ nav ul {
 nav ul li {
   text-align: center;
 }
-.links {
+nav a {
   color: white;
   text-decoration: none;
 }
-.links:hover{
+nav a:hover {
   color: #004db3;
-background-color: white;
+  background-color: white;
 }
 .image-one {
   height: auto;
@@ -71,13 +74,13 @@ main {
 .card {
   border: 1px solid black;
   grid-column: 1/8;
-  margin: 20px;
+  margin: 90px;
   border-radius: 2%;
 }
 .card-two {
   border: 1px solid black;
   grid-column: 8/11;
-  margin: 20px;
+  margin: 90px;
   border-radius: 2%;
 }
 .card-content {
@@ -144,7 +147,7 @@ footer {
   text-align: center;
   padding: 20px;
 }
-#lastModified{
-	padding-top: 2px;
-	font-size: 15px;
+#lastModified {
+  padding-top: 2px;
+  font-size: 15px;
 }
