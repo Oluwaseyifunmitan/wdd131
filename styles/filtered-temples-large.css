@@ -1,0 +1,64 @@
+@media screen and (min-width: 500px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-left: 30px;
+  }
+  body {
+    max-width: 100vw;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2px;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+
+  nav a {
+    /* padding: 20px; */
+    margin: 20px;
+  }
+
+  nav a:hover {
+    text-decoration: underline double;
+  }
+  #menu {
+    display: none;
+  }
+
+  img {
+    max-width: 30vw;
+    height: auto;
+  }
+  figure {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .temple-card {
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  .temple-card img {
+    max-width: 25vw;
+    height: auto;
+    display: block;
+    margin-top: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .temple-card p {
+    text-align: center;
+  }
+}
