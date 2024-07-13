@@ -133,30 +133,73 @@ function createTempleCards(temples) {
 // Call the function with the temples array
 createTempleCards(temples);
 
+// function filterTemples(filter) {
+//   let filteredTemples = [];
+
+//   switch (filter) {
+//     case "old":
+//       filteredTemples = temples.filter(
+//         (temple) => new Date(temples.dedicated) < new Date("1900-01-01")
+//       );
+//       break;
+//     case "new":
+//       filteredTemples = temples.filter(
+//         (temple) => new Date(temples.dedicated) > new Date("2000-01-01")
+//       );
+//       break;
+//     case "large":
+//       filteredTemples = temples.filter((temple) => temples.area > 10000);
+//       break;
+//     case "small":
+//       filteredTemples = temples.filter((temple) => temples.area < 10000);
+//       break;
+//     case "home":
+//     default:
+//       filteredTemples = temples;
+//       break;
+//   }
+
+ 
+// }
+
+// // Initially display all temples
+// filterTemples("home");
 function filterTemples(filter) {
-    let filteredTemples = [];
-
-    switch(filter) {
-        case 'old':
-            filteredTemples = temples.filter(temple => new Date(temple.dedicated) < new Date('1900-01-01'));
-            break;
-        case 'new':
-            filteredTemples = temples.filter(temple => new Date(temple.dedicated) > new Date('2000-01-01'));
-            break;
-        case 'large':
-            filteredTemples = temples.filter(temple => temple.area > 90000);
-            break;
-        case 'small':
-            filteredTemples = temples.filter(temple => temple.area < 10000);
-            break;
-        case 'home':
-        default:
-            filteredTemples = temples;
-            break;
-    }
-
-    createTempleCards(filteredTemples);
-}
-
-// Initially display all temples
-filterTemples('home');
+	let filteredTemples = [];
+  
+	switch (filter) {
+	  case "old":
+		filteredTemples = temples.filter(
+		  (temple) => new Date(temple.dedicated) < new Date("1900-01-01")
+		);
+		break;
+	  case "new":
+		filteredTemples = temples.filter(
+		  (temple) => new Date(temple.dedicated) > new Date("2000-01-01")
+		);
+		break;
+	  case "large":
+		filteredTemples = temples.filter((temple) => temple.area > 90000);
+		break;
+	  case "small":
+		filteredTemples = temples.filter((temple) => temple.area < 10000);
+		break;
+	  case "home":
+	  default:
+		filteredTemples = temples;
+		break;
+	}
+  
+	// Display the filtered temples
+	displayTemples(filteredTemples);
+  }
+  
+  // Function to display the temples (you need to implement this function)
+  function displayTemples(temples) {
+	// Code to display the temples goes here
+	console.log(temples); // For now, let's just log them to the console
+  }
+  
+  // Initially display all temples
+  filterTemples("home");
+  
