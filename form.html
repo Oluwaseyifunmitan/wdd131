@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -7,95 +9,92 @@
     <meta name="description" content="WDD 131 - Dynamic Web Fundamentals" />
     <link rel="stylesheet" href="styles/form.css" />
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/populate.js" defer></script>
+
     <title>Form</title>
   </head>
-  <h1>Product Review</h1>
   <body>
+    <header>
+      <h1>Product Review</h1>
+    </header>
     <form method="get" action="review.html" class="wf1">
-      <label
-        >Product Name
-        <select name="product" id="product">
-          <option value="" disabled>Select a product</option>
-        </select>
-      </label>
-      <div>Overall Rating</div>
-      <label
-        ><input type="radio" name="rating" value="one" id="rating" required />
-        1</label
-      >
-      <label
-        ><input type="radio" name="rating" value="two" id="rating" required />
-        2</label
-      >
-      <label
-        ><input
-          type="radio"
-          name="rating"
-          value="three"
-          id="rating"
-          required
-        />3</label
-      >
-      <label
-        ><input
-          type="radio"
-          name="rating"
-          value="four"
-          id="rating"
-          required
-        />4</label
-      >
-      <label
-        ><input
-          type="radio"
-          name="rating"
-          value="five"
-          id="rating"
-          required
-        />5</label
-      >
+  
+        <div>
+        <label>
+          Product Name
+          <select name="product" id="product" required>
+            <option value="" disabled selected>Select a product</option>
+          </select>
+        </label>
+      </div>
+<div> 
+  <p>Overall Rating</p>
+        <label>
+          <input type="radio" name="rating" value="one" id="rating1" required />
+          1
+        </label>
+        <label>
+          <input type="radio" name="rating" value="two" id="rating2" required />
+          2
+        </label>
+        <label>
+          <input type="radio" name="rating" value="three" id="rating3" required />
+          3
+        </label>
+        <label>
+          <input type="radio" name="rating" value="four" id="rating4" required />
+          4
+        </label>
+        <label>
+          <input type="radio" name="rating" value="five" id="rating5" required />
+          5
+        </label>
+      </div>
+        <div>
+          <label>
+            Date of Installation
+            <input type="date" name="installationDate" id="installationDate" required />
+          </label>
+        </div>
 
-      <label
-        >Date of Installation
-        <input
-          type="date"
-          name="installationDate"
-          id="installationDate"
-          required
-      /></label>
+        <div>Which features did you find useful in the product?
+          <i>(Check all that apply)</i>
+        </div>
+        <div>
+        <label class="checkbox">
+          <input type="checkbox" name="features" value="durable" id="durable" />
+          Durability
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="features" value="use" id="use" />
+          Ease of use
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="features" value="performance" id="performance" />
+          Performance
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="features" value="design" id="design" />
+          Design
+        </label>
+      </div>
+        <div>
+          <label>Written Review <span>(optional)</span></label>
+          <textarea name="review" id="review"></textarea>
+        </div>
 
-      <div>Which features did you find useful in the product?</div>
-      <p>(Check all that apply)</p>
-      <label
-        ><input type="checkbox" name="durable" value="yes" id="features" />
-        Durablility</label
-      >
-      <label
-        ><input type="checkbox" name="use" value="yes" id="features" /> Ease of
-        use</label
-      >
-      <label
-        ><input type="checkbox" name="peformance" value="yes" id="features" />
-        Performance</label
-      >
-      <label
-        ><input type="checkbox" name="design" value="yes" id="features" />
-        Design</label
-      >
+        <div>
+          <label>Your name <span>(optional)</span></label>
+          <textarea name="name" id="name"></textarea>
+        </div>
 
-      <label>Written Review<span>(optional)</span></label>
-      <textarea name="review" id="review"></textarea>
-
-      <label>Your name<span>(optional)</span></label>
-      <textarea name="name" id="name"></textarea>
-
-      <input type="submit" value="Post Review" />
+        <input type="submit" value="Post Review" />
+      
     </form>
 
     <footer>
       <p>
-        &copy;<span id="currentyear"></span> 🌺 Oluwaseyi Oyindasola Makinde 🌺
-        Nigeria
+        &copy;<span id="currentyear"></span> 🌺 Oluwaseyi Oyindasola Makinde 🌺 Nigeria
       </p>
       <p id="lastModified"></p>
     </footer>
