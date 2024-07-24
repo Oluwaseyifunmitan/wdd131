@@ -7,38 +7,33 @@
     <meta name="author" content="Oluwaseyi Makinde" />
     <title>Rental Listing page</title>
     <link rel="stylesheet" href="styles/styles.css" />
+    <script src="scripts/project.js" defer></script>
+
   </head>
   <body>
     <header>
-        <h1>Rental Listings</h1>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="listings.html">Rental Listings</a>
-            <!-- <a href="shop.html">Shop</a>
-            <a href="about.html">About Us</a> -->
-            <a href="contact.html">Contact</a>
-        </nav>
+        <h1>Rentals</h1>
+        <a id="menu" href="#"></a>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="listings.html">Rental Listings</a>
+        <!-- <a href="shop.html">Shop</a> -->
+        <!-- <a href="about.html">About Us</a> -->
+        <a href="contact.html">Contact</a>
+      </nav>
     </header>
-    <main>
-        <section>
-            <h2>Available Rentals</h2>
-            <form id="filterForm">
-                <label for="location">Location:</label>
-                <input type="text" id="location" name="location">
-                <label for="priceRange">Price Range:</label>
-                <input type="text" id="priceRange" name="priceRange">
-                <label for="propertyType">Property Type:</label>
-                <input type="text" id="propertyType" name="propertyType">
-                <label for="amenities">Amenities:</label>
-                <input type="text" id="amenities" name="amenities">
-                <button type="submit">Search</button>
-            </form>
-            <div id="listings"></div>
-        </section>
-    </main>
+      
+  
+      <main>
+        <h2>Home</h2>
+        <section id="rental-cards-container"></section>
+      </main>
+      </main>
     <footer>
         <p>&copy; 2024 Real Estate Rentals. All Rights Reserved.</p>
     </footer>
-    <script src="js/scripts.js"></script>
+    
 </body>
+
 </html>

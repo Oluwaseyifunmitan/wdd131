@@ -149,3 +149,32 @@ fieldset {
 label {
   margin-top: 10px;
 }
+/* img {
+    max-width: 50vw;
+    height: auto;
+  } */
+  figure {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+  
+  .rental-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    margin: 16px;
+    background-color: #eeeeee;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  .rental-card img {
+    /* max-width: 25vw; */
+    height: auto;
+    display: block;
+    margin-top: 8px;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .rental-card p {
+    text-align: center;
+  }
